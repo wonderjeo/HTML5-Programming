@@ -16,6 +16,9 @@ function handleButtonClick(e){
 	else{
 		var li=document.createElement("li");
 		li.innerHTML=songName;
-		var ul = document
+		var ul = document.getElementById("playlist");
+		ul.appendChild(li);
+
+		save(songName);
 	}
 }
